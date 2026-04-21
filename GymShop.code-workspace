@@ -7,5 +7,7 @@
 			"path": "../Projekt"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GymShop"
+	}
 }
