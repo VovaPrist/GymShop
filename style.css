@@ -134,6 +134,49 @@ header .choice{
     flex: none;
 }
 
+main {
+    padding-top: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.products-line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mobile Grid - 2 columns */
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.product-box {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    position: relative;
+}
+
+.product-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.product-box p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+
+
 footer {
     margin-top: 80px;
     background-color: #0f0f0f;
