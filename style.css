@@ -134,6 +134,57 @@ header .choice{
     flex: none;
 }
 
+.dropdown-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: #000;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 999;
+}
+
+.dropdown-menu.active {
+    max-height: 600px;
+}
+
+.dropdown-content {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.dropdown-content h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 16px 0 12px 0;
+}
+
+.dropdown-content a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    transition: color 0.2s ease;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    color: #fff;
+}
+
 main {
     padding-top: 100px;
     padding-left: 16px;
@@ -141,6 +192,20 @@ main {
     padding-bottom: 40px;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.section-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.section {
+    margin-bottom: 60px;
 }
 
 .products-line {
@@ -336,6 +401,78 @@ footer .admin-link a:hover {
         width: 32px;
         height: 32px;
     }
+
+    .section h2 {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    .products-line {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .product-box {
+        height: 450px;
+    }
+
+    .product-box:hover {
+        transform: translateY(-8px);
+    }
+
+    .dropdown-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background-color: #000;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 999;
+    }
+
+    .dropdown-menu.active {
+        max-height: 600px;
+    }
+
+    .dropdown-content {
+        padding: 20px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .dropdown-content h3 {
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 16px 0 12px 0;
+    }
+
+    .dropdown-content a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 12px 0;
+        border-bottom: 1px solid #222;
+        transition: color 0.2s ease;
+    }
+
+    .dropdown-content a:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-content a:hover {
+        color: #fff;
+    }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
     header {
@@ -357,7 +494,18 @@ footer .admin-link a:hover {
         height: 32px;
     }
 
+    .dropdown-menu {
+        top: 70px;
+    }
 
+    .dropdown-content {
+        padding: 20px 20px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 480px) {
     .footer-container {
