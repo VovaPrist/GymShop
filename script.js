@@ -128,13 +128,13 @@ class ShoppingCart {
         modal.innerHTML = `
             <div class="cart-content">
                 <div class="cart-header">
-                    <h2>Shopping Cart</h2>
+                    <h2>Kundvagn</h2>
                     <span class="close-cart">&times;</span>
                 </div>
                 <div class="cart-items"></div>
                 <div class="cart-footer">
                     <div class="cart-total">Total: <span id="cartTotal">0 kr</span></div>
-                    <button class="checkout-btn">Checkout</button>
+                    <button class="checkout-btn">Betala</button>
                 </div>
             </div>
         `;
@@ -156,7 +156,7 @@ class ShoppingCart {
         const totalEl = document.getElementById('cartTotal');
 
         if (this.cart.length === 0) {
-            itemsContainer.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+            itemsContainer.innerHTML = '<p class="empty-cart">Din varukorg är tom</p>';
             totalEl.textContent = '0 kr';
             return;
         }
