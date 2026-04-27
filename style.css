@@ -507,6 +507,11 @@ footer .admin-link a:hover {
         font-size: 24px;
         margin-bottom: 20px;
     }
+
+    .products-line {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
 }
 @media (max-width: 480px) {
     .footer-container {
