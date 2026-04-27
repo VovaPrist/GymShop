@@ -1,4 +1,3 @@
-// ===== MENU MANAGER =====
 class MenuManager {
     constructor() {
         this.dropdownMenu = document.getElementById('dropdownMenu');
@@ -116,10 +115,6 @@ class ShoppingCart {
         this.updateCartCount();
     }
 
-    updateCartCount() {
-        // Cart count tracking removed - no visual indicator needed
-    }
-
     showCartModal() {
         const modal = document.getElementById('cartModal') || this.createCartModal();
         modal.style.display = 'flex';
@@ -192,7 +187,6 @@ class ShoppingCart {
     }
 }
 
-// ===== PRODUCT MANAGER =====
 class Product {
     static idCounter = 1;
 
@@ -269,15 +263,11 @@ class ProductManager {
     }
 }
 
-// ===== INITIALIZE =====
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize menu
     new MenuManager();
 
-    // Initialize products
     const productManager = new ProductManager();
 
-    // Add your products with the correct category names
     productManager.addProducts([
         // New Arrivals
         { name: 'Apex Seamless Compression Tee', price: 349, category: 'new', image: 'products/Apex.jpeg' },
@@ -316,7 +306,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Performance Training Gloves', price: 199, category: 'accessories', image: 'products/Gloves.jpeg' },
     ]);
 
-    // Display products in their respective sections
     productManager.displayProductsByCategory('new', 'newArrivals');
     productManager.displayProductsByCategory('sale', 'saleItems');
     productManager.displayProductsByCategory('mensTshirts', 'mensTshirts');
