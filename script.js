@@ -281,7 +281,39 @@ document.addEventListener('DOMContentLoaded', () => {
     productManager.addProducts([
         // New Arrivals
         { name: 'Apex Seamless Compression Tee', price: 349, category: 'new', image: 'products/Apex.jpeg' },
-
+        { name: 'Velocity Hybrid Training Shorts', price: 399, category: 'new', image: 'products/Velocity.jpeg' },
+        { name: 'Core Sculpt Leggings', price: 499, category: 'new', image: 'products/Core.jpeg' },
+        { name: 'Titan Oversized Pump Hoodie', price: 599, category: 'new', image: 'products/Titan.jpeg' },
+        
+        // Sale Items
+        { name: 'Flex Performance Tank', price: 199, category: 'sale', image: 'products/Flex.jpeg' },
+        { name: 'Powerlift Training Shorts', price: 299, category: 'sale', image: 'products/Powerlift.jpeg' },
+        { name: 'Sculpt Fit Long Sleeve', price: 249, category: 'sale', image: 'products/Sculpt.jpeg' },
+        { name: 'Elite Zip Training Hoodie', price: 249, category: 'sale', image: 'products/Elite.jpeg' },
+        
+        // Men's T-Shirts
+        { name: 'Iron Core Fitted Tee', price: 299, category: 'mensTshirts', image: 'products/Iron.jpeg' },
+        { name: 'MotionTech Breathable Tee', price: 349, category: 'mensTshirts', image: 'products/Iron.jpeg' },
+        { name: 'Classic Pump Cover Tee', price: 279, category: 'mensTshirts', image: 'products/Iron.jpeg' },
+        { name: 'ProForm Athletic Tee', price: 329, category: 'mensTshirts', image: 'products/Iron.jpeg' },
+        
+        // Men's Shorts
+        { name: 'Endurance Training Shorts', price: 399, category: 'mensShorts', image: 'products/Powerlift.jpeg' },
+        { name: 'FlexLite Gym Shorts', price: 349, category: 'mensShorts', image: 'products/Powerlift.jpeg' },
+        { name: 'Power Mesh Workout Shorts', price: 449, category: 'mensShorts', image: 'products/Powerlift.jpeg' },
+        { name: 'Sprint Performance Shorts', price: 379, category: 'mensShorts', image: 'products/Powerlift.jpeg' },
+        
+        // Women's Clothing
+        { name: "Sculpt Seamless Sports Bra", price: 349, category: 'womensClothing', image: 'products/Apex.jpeg' },
+        { name: "Contour High-Waist Leggings", price: 499, category: 'womensClothing', image: 'products/Apex.jpeg' },
+        { name: "FlexFit Training Crop Top", price: 299, category: 'womensClothing', image: 'products/Apex.jpeg' },
+        { name: "Motion Sculpt Shorts", price: 299, category: 'womensClothing', image: 'products/Apex.jpeg' },
+        
+        // Accessories
+        { name: 'SteelCore Shaker Bottle', price: 249, category: 'accessories', image: 'products/Shaker.jpeg' },
+        { name: 'ProGrip Lifting Belt', price: 499, category: 'accessories', image: 'products/Belt.jpeg' },
+        { name: 'Resistance Power Bands Set', price: 249, category: 'accessories', image: 'products/Bands.jpeg' },
+        { name: 'Performance Training Gloves', price: 199, category: 'accessories', image: 'products/Gloves.jpeg' },
     ]);
 
     // Display products in their respective sections
