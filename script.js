@@ -112,7 +112,6 @@ class ShoppingCart {
                 this.showCartModal();
             });
         }
-        this.updateCartCount();
     }
 
     showCartModal() {
