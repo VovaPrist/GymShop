@@ -83,7 +83,6 @@ class ShoppingCart {
 
     saveCart() {
         localStorage.setItem(this.storageKey, JSON.stringify(this.cart));
-        this.updateCartCount();
     }
 
     addProduct(product) {
@@ -147,6 +146,15 @@ class ShoppingCart {
             if (e.target === modal) modal.style.display = 'none';
         });
 
+        // Event delegation for remove buttons
+        modal.addEventListener('click', (e) => {
+            if (e.target.classList.contains('remove-btn')) {
+                const productId = parseInt(e.target.dataset.id);
+                this.removeProduct(productId);
+                this.updateCartDisplay();
+            }
+        });
+
         return modal;
     }
 
@@ -174,13 +182,6 @@ class ShoppingCart {
                 <button class="remove-btn" data-id="${item.id}">Remove</button>
             </div>
         `).join('');
-
-        itemsContainer.querySelectorAll('.remove-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                this.removeProduct(parseInt(e.target.dataset.id));
-                this.updateCartDisplay();
-            });
-        });
 
         totalEl.textContent = this.getCartTotal() + 'kr';
     }
