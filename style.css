@@ -597,7 +597,6 @@ footer .admin-link a:hover {
     cursor: not-allowed;
 }
 
-/* ===== CART BADGE ===== */
 .cart-badge {
     display: none;
 }
@@ -606,7 +605,6 @@ footer .admin-link a:hover {
     position: relative;
 }
 
-/* ===== CART MODAL ===== */
 .cart-modal {
     display: none;
     position: fixed;

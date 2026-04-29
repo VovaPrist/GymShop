@@ -225,7 +225,7 @@ class ProductManager {
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-category">${product.category}</p>
                 <p class="product-price">${product.price} kr</p>
-                <button class="add-to-cart-btn" data-id="${product.id}">Add to Cart</button>
+                <button class="add-to-cart-btn" data-id="${product.id}">Lägg till kundvagn</button>
             </div>
         `).join('');
 
@@ -249,7 +249,7 @@ class ProductManager {
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-category">${product.category}</p>
                 <p class="product-price">${product.price} kr</p>
-                <button class="add-to-cart-btn" data-id="${product.id}">Add to Cart</button>
+                <button class="add-to-cart-btn" data-id="${product.id}">Lägg till kundvagn</button>
             </div>
         `).join('');
 
